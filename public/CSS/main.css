@@ -2,3 +2,39 @@ body{
     background: #3a3a3a;
     color: aliceblue;
 }
+.profile_info li{
+    list-style: none;
+    padding: 0 1rem;
+    margin-top: 20px;
+}
+.profile_info li:nth-child(1){
+    background: rgb(131, 0, 0);
+    padding: 1rem  ;
+    margin: 0;
+    color: aliceblue;
+    border-radius: 10px 10px 0 0;
+}
+ul.profile_info{
+    width: 90%;
+    padding: 0;
+    margin:  40px 0;
+    background: #212529;
+    color: aliceblue;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.badge{
+    font-size: .9rem;
+}
+
+img{
+    margin:  40px 0;
+    width: 200px;
+    filter: invert(100%);
+}
+.col-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

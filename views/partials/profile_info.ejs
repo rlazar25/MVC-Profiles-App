@@ -1,6 +1,21 @@
 <div class="row">
-    <div class="col-3">
-       <h1><%= currentAcount.firstName %></h1>
+    <div class="col-5">
+        <img src="/icons/person-bounding-box.svg" alt="profile pic">
+       <h1><%= `${currentAcount.firstName} ${currentAcount.lastName}`  %></h1>
     </div>
-    <div class="col-9"></div>
+    <div class="col-7">
+        <ul class="profile_info">
+            <li>
+                Accountant
+            </li>
+            <li>Full Name: <p class="badge bg-secondary"><%= `${currentAcount.firstName} ${currentAcount.lastName}` %></p></li>
+            <li>Deposit: <p class="badge bg-danger"><%= currentAcount.deposit %></p></li>
+            <li>Credit Card: <p class="badge bg-info"><%= currentAcount.creditCard %></p></li>
+            <li>Age: <p class="badge bg-secondary"><%= currentAcount.profileInfo.age %></p></li>
+            <li>Gender: <p class="badge bg-secondary"><%= currentAcount.profileInfo.gender %></p></li>
+            <li>City: <p class="badge bg-secondary"><%= currentAcount.profileInfo.city %></p></li>
+            <li>Email: <p class="badge bg-secondary"><%= currentAcount.profileInfo.email %></p></li>
+            <li>Singed: <p class="badge bg-secondary"><%= currentAcount.createdAt %></p></li>
+        </ul>
+    </div>
 </div>

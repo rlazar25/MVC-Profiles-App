@@ -9,4 +9,8 @@ const profileCtrl = (req, res) =>{
     })
 }
 
+const deleteProfile = (req,res) =>{
+    
+}
+
 module.exports = profileCtrl;

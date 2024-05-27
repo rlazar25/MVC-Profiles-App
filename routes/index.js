@@ -1,5 +1,5 @@
 const expres = require('express');
-const homeCtrl = require('../controllers/HomeCtrl');
+   const homeCtrl = require('../controllers/HomeCtrl');
 const profileCtrl = require('../controllers/ProfileCtrl');
 
 const router = expres.Router();
