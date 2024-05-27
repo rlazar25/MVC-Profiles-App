@@ -2,6 +2,7 @@
     <div class="col-5">
         <img src="/icons/person-bounding-box.svg" alt="profile pic">
        <h1><%= `${currentAcount.firstName} ${currentAcount.lastName}`  %></h1>
+       <a href="/profile/<%= currentAcount.id %>/delete" class="btn btn-danger">Delete</a>
     </div>
     <div class="col-7">
         <ul class="profile_info">

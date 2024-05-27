@@ -1,10 +1,10 @@
-const fs = require('fs');
+const fs = require('fs').promises;
 
 
-const homeCtrl = (req, res) =>{
-    fs.readFile('data.json', 'utf-8', (err, file) => {
-        res.render('index', {accounts: JSON.parse(file)});
-    });
+const homeCtrl = async (req, res) =>{
+    const content = await fs.readFile('./data.json', 'utf-8');
+    // await fs.writeFile('./new_data.json', content)
+    res.render('index', {accounts: JSON.parse(content)});
 }
 
 
